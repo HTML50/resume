@@ -1,0 +1,138 @@
+@import 'https://fonts.googleapis.com/css?family=Cutive';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	font: 62.5% "Cutive",Verdana,"仿宋",sans-serif;
+	color: #fff;
+	background-color: #000;
+	overflow: hidden;
+	display:block;
+}
+
+
+#who-am-i {
+	background: #fff;
+	transition: background-color 1000ms ease-out,color 150ms ease-out;
+	color: #000;
+	font-size: 3rem;
+	/*display:block !important;*/
+	/*这里加这句，就会和$.show()冲突，文字会强制显示。*/
+}
+
+
+#i-am-frank {
+	width:560px;
+	height: 3rem;
+	line-height:3rem;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	/*绝对居中布局，放在别处不管用？？？？*/
+}
+
+#arrow	{
+	display:none;
+}
+
+#my-project {
+	background: #dc6c5f;
+}
+
+#my-experience {
+	background: green;
+}
+
+.page4 {
+	background: #89b32f;
+}
+
+.page4 {
+	background: #64b9d2;
+}
+
+.tiffnyblue {
+	background: #81ced0;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) and (min-width: 500px){
+	body,html {
+		font-size:31.25%;
+	}
+
+	.subtitle{
+	width:300px;}
+	
+	.line {
+   height:2px;
+   }
+	
+#who-am-i{
+		font-size: 2rem;
+	}
+	
+	#i-am-frank {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	width: 80%;
+}
+}
+
+@media screen and (max-width: 500px) and (min-width: 380px){
+	body,html {
+	font-size:25%;
+	}
+	
+	
+	.subtitle{
+	width:300px;}
+	
+	.line {
+   width:100px;
+   height:1px;
+   }
+   
+   	.bullets li {
+		margin: 0 6px;
+	}
+   
+   
+   }
+   
+   @media screen and (max-width: 379px){
+	body,html {
+		font-size:12.25%;
+	}
+		.line {
+   width:50px;
+   height:1px;
+   }
+   
+   .subtitle{
+	width:200px;}
+	
+	.pace .pace-progress {
+  box-shadow: 0 0 5px #e51115;
+  height: 5px;
+
+}
+
+  #i-am-frank {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	width: 150px;
+}
+   }
