@@ -29,12 +29,10 @@ typer.type(3000).type('Hello, I am frank').type(100).type(1500).del().type('i li
 setTimeout(function(){
 	
 var bullet = $('<ul id="bullets" style="display:none"></ul>');
-var arrow = $('<path id="scroll-arrow" d="M0 2.98L1.996.507l6.012 4.29L14 .508 16 2.98 8 9.006 0 2.98z" fill="#FFF"></path>');
 
 $("#cubeTransition").append(bullet);
-$("#who-am-i").append(arrow);
 $("#bullets").fadeIn(3000);
-$("#arrow").fadeIn(3000);
+$("#scroll-arrow").fadeIn(3000);
 
 $('#who-am-i').css('background','#81ced0')
 
