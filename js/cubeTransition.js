@@ -7,11 +7,9 @@
 	
 
 
-	for (i = 0; i < length; i++) {
-		var bullet = $("<li></li>");
-		if (i == 0) bullet.addClass('active');
+		var bullet = $("<li class='active' id='nav_me'><svg class="icon icon-images"><use xlink:href="img/symbol-defs.svg#icon-images"></use></svg></li><li id='nav_project'></li><li id='nav_experience'></li><li id='nav_'></li>");
 		$("#bullets").append(bullet);
-	}
+
 
 	function openIndex(i) {
 		if (!onGoing && next != i) {
