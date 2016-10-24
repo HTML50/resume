@@ -7,7 +7,7 @@
 	
 
 
-		var bullet = $("<li class='active' id='nav_me'><svg class="icon icon-images"><use xlink:href="img/symbol-defs.svg#icon-images"></use></svg></li><li id='nav_project'></li><li id='nav_experience'></li><li id='nav_'></li>");
+		var bullet = $("<li class='active'><span>About</span></li><li><span>project</span></li><li><span>Experience</span></li><li><span>skill</span></li><li><span>info</span></li>");
 		$("#bullets").append(bullet);
 
 

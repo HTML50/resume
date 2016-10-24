@@ -22,14 +22,76 @@ color:#fff;
 }
 
 /******************************   			top layer					******************************/
-#bullets #nav_me{
-	
+
+#bullets {
+	position: absolute;
+	top:40%;
+	left: 20px;
+	text-align: center;
+	z-index:100;
+	font-size:15px;
+}
+
+#bullets li {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 10px 0 0 0;
+	background: rgba( 255, 255, 255, 0.5 );
+	cursor: pointer;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+}
+
+#bullets li:hover {
+	background: rgba( 255, 255, 255, 0.8 );
+}
+
+#bullets li.active {
+	cursor: default;
+	background: #fff;
+}
+
+
+#bullets li span{
+margin-left:25px;
+visibility: hidden;
+opacity: 0;
+transition:all 1s;
+}
+
+#bullets li:hover span{
+visibility: visible;
+opacity: 1;
 }
 
 
 
+.center-box{
+  width:80rem;
+  height: 80%;  
+  margin: auto;  
+  position: absolute;  
+  top: 0; left: 0; bottom: 0; right: 0;  
+}
 
+.center-box h1{
+	font-size:3rem;
+	text-shadow: 3px 3px 5px black;
+}
 
+.center-box h2{
+	font-size:1rem;
+}
+
+.center-box h3{
+	font-size:2rem;
+}
+
+.center-box .line{
+width:80%;
+height:2px;
+background:#fff;
+margin:2rem 0 2rem 0;
+}
 /******************************   			i-am-frank					******************************/
 #who-am-i {
 	background: #fff;
@@ -227,15 +289,34 @@ background:rgba(255,255,255,.5);
 }
 
 
+
+
+/******************************   			skill					******************************/
+
+#my-skill {
+	background: #64b9d2;
+}
+
+.center-box .lang{
+	font-size:3rem;
+	display:block;
+}
+.center-box .proficiency{
+	background:#fff;
+	width:50%;
+	height:1rem;
+	display:inline-block;
+	margin-left:20px;
+}
+
+
 /******************************   			info					******************************/
 
-.my-info {
+#my-info {
 	background: #89b32f;
 }
 
-.page4 {
-	background: #64b9d2;
-}
+
 
 .tiffnyblue {
 	background: #81ced0;

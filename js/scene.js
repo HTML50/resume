@@ -1,5 +1,5 @@
 //this file is the main logic of animation
-console.log("%cAny application that can be written in JavaScript, will eventually be written in JavaScript----Atwood's Law", "font-family:arial;font-size:20px;padding:50px 30px;background: radial-gradient(ellipse at center, rgba(147,206,222,.8) 0%,rgba(117,189,209,1)");
+console.log("%cAny application that can be written in JavaScript, will eventually be written in JavaScript----Atwood's Law", "line-height:80px;font-family:arial;font-size:20px;padding:50px 30px;background: radial-gradient(ellipse at center, rgba(147,206,222,.8) 0%,rgba(117,189,209,1)");
 
 var typer;
 var firstLoad=false;
@@ -39,7 +39,7 @@ $("#bullets").fadeIn(3000);
 $("#scroll-arrow").fadeIn(3000);
 $('#who-am-i').css('background','#81ced0')
 jQuery.getScript("js/cubeTransition.js")
-},15000)
+},1)
 				
 		});
 	});

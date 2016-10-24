@@ -95,29 +95,3 @@
 		transform: translateY(-50%) translateZ(-200px) rotateX(45deg);
 	}
 }
-
-#bullets {
-	position: absolute;
-	top:50%;
-	left: 20px;
-	text-align: center;
-	z-index:100;
-}
-
-#bullets li {
-	display: block;
-	width: 20px;
-	height: 20px;
-	margin: 10px 0 0 0;
-	background: rgba( 255, 255, 255, 0.5 );
-	cursor: pointer;
-}
-
-#bullets li:hover {
-	background: rgba( 255, 255, 255, 0.8 );
-}
-
-#bullets li.active {
-	cursor: default;
-	background: #fff;
-}
