@@ -4,7 +4,7 @@
 }
 
 #loader{
-background: #000 url(http://miukimiu.github.io/star-wars-random-quotes/images/bg.jpg);
+background: #000 url(../img/bg.jpg);
 height:100%;
 width:100%;
 animation: animatedBackground 170s linear infinite; 
@@ -45,14 +45,14 @@ text-indent: 1rem;
 }
 
 
-.line {
+.subtitle .line {
    width:200px;
    height:3px;
    }
-.left {
+.subtitle .left {
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(19%, #fff), color-stop(100%, #fff));
 }
 
-.right {
+.subtitle .right {
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, #fff), color-stop(81%, #fff), color-stop(100%, rgba(255,255,255,0)))
 }

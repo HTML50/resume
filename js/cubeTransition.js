@@ -43,7 +43,7 @@
 		$('#bullets>li:eq(' + (current - 1) + ')').removeClass('active');
 		$('#bullets>li:eq(' + (next - 1) + ')').addClass('active');
 		$('#cubeTransition>div:eq(' + (next - 1) + ')').show();
-
+		animationOut(current-1)
 		setTimeout(function() {
 			$('#cubeTransition>div:eq(' + (current - 1) + ')').hide();
 		}, 500)
@@ -51,11 +51,68 @@
 		setTimeout(function() {
 			$('#cubeTransition>div:eq(' + (current - 1) + ')').removeClass(outClass);
 			$('#cubeTransition>div:eq(' + (next - 1) + ')').removeClass(inClass);
+			animationIn(next-1)
 			current = next;
 			onGoing = false;
 		}, 800)
 	}
+	
+	
+	
+	
+function animationIn(i){
+switch(i) {
+    case 1:
+        $('.page2 h2').fadeIn();
+        break;
+    case 2:
+        $('#experience-one').fadeIn(1000,function(){$('#experience-two').fadeIn(1000,function(){$('#experience-three').fadeIn(1000)})});
+        break;
+	case 3:
+		$('#my-skill .javascript-bar').css('width','40rem');
+		$('#my-skill .html-bar').css('width','40rem');
+		$('#my-skill .css-bar').css('width','40rem');
+		$('#my-skill .font-bar').css('width','25rem');
+		$('#my-skill .color-bar').css('width','30rem');
+		$('#my-skill .image-bar').css('width','32rem');
+		$('#my-skill .animation-bar').css('width','30rem');
+		$('#my-skill .layout-bar').css('width','40rem');
+        break;
+		case 4:
+		
+        break;
+		default:;
+}
+}
 
+function animationOut(i){
+switch(i) {
+    case 1:
+        $('.page2 h2').fadeOut();
+        break;
+    case 2:
+        $('#experience-one,#experience-two,#experience-three').fadeOut()
+        break;
+	case 3:
+        $('#my-skill .javascript-bar').css('width','20rem')
+		$('#my-skill .html-bar').css('width','20rem')
+		$('#my-skill .css-bar').css('width','20rem')
+		$('#my-skill .font-bar').css('width','20rem')
+		$('#my-skill .color-bar').css('width','20rem')
+		$('#my-skill .image-bar').css('width','20rem')
+		$('#my-skill .animation-bar').css('width','20rem')
+		$('#my-skill .layout-bar').css('width','20rem')
+        break;
+	case 4:
+		
+        break;
+    default:
+        ;
+}
+}
+	
+	
+	
 	$(document).ready(
 
 	function() {

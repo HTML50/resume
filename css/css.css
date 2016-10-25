@@ -22,6 +22,11 @@ color:#fff;
 }
 
 /******************************   			top layer					******************************/
+.ab-center{
+	margin: auto;  
+  position: absolute;  
+  top: 0; left: 0; bottom: 0; right: 0;  
+}
 
 #bullets {
 	position: absolute;
@@ -63,30 +68,7 @@ visibility: visible;
 opacity: 1;
 }
 
-
-
-.center-box{
-  width:80rem;
-  height: 80%;  
-  margin: auto;  
-  position: absolute;  
-  top: 0; left: 0; bottom: 0; right: 0;  
-}
-
-.center-box h1{
-	font-size:3rem;
-	text-shadow: 3px 3px 5px black;
-}
-
-.center-box h2{
-	font-size:1rem;
-}
-
-.center-box h3{
-	font-size:2rem;
-}
-
-.center-box .line{
+.line{
 width:80%;
 height:2px;
 background:#fff;
@@ -288,25 +270,49 @@ background:rgba(255,255,255,.5);
 	background: green;
 }
 
+.experience-box{
+  width:80rem;
+  height: 80%;  
+}
 
+.experience-box h1{
+	font-size:3rem;
+	text-shadow: 3px 3px 5px black;
+}
 
+.experience-box h2{
+	font-size:1rem;
+}
+
+.experience-box h3{
+	font-size:2rem;
+}
+
+#experience-one,#experience-two,#experience-three{
+	display:none;
+}
 
 /******************************   			skill					******************************/
 
 #my-skill {
 	background: #64b9d2;
 }
-
-.center-box .lang{
-	font-size:3rem;
-	display:block;
+.skill-box{
+	height:35rem;
+	width:60rem;
 }
-.center-box .proficiency{
+
+.skill-box .lang{
+	font-size:3rem;
+	display:inline-block;
+}
+.skill-box .proficiency{
 	background:#fff;
-	width:50%;
+	width:20rem;
 	height:1rem;
 	display:inline-block;
 	margin-left:20px;
+	transition:width 1s;
 }
 
 
@@ -323,16 +329,14 @@ background:rgba(255,255,255,.5);
 }
 
 
-
-
-
 @media screen and (max-width: 700px) and (min-width: 500px){
 	body,html {
 		font-size:31.25%;
 	}
 
 	.subtitle{
-	width:300px;}
+	width:300px;
+	}
 	
 	.line {
    height:2px;
@@ -356,9 +360,9 @@ background:rgba(255,255,255,.5);
 	font-size:25%;
 	}
 	
-	
 	.subtitle{
-	width:300px;}
+	width:300px;
+	}
 	
 	.line {
    width:100px;
@@ -366,7 +370,7 @@ background:rgba(255,255,255,.5);
    }
    
    	.bullets li {
-		margin: 0 6px;
+	margin: 0 6px;
 	}
    
    
@@ -376,7 +380,7 @@ background:rgba(255,255,255,.5);
 	body,html {
 		font-size:12.25%;
 	}
-		.line {
+	.line {
    width:50px;
    height:1px;
    }
