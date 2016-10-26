@@ -56,15 +56,27 @@
 			onGoing = false;
 		}, 800)
 	}
-	
-	
-	
-	
+
+		
 function animationIn(i){
 switch(i) {
-    case 1:
-        $('.page2 h2').fadeIn();
+	case 0:
+		$('#who-am-i #avatar img').css({'opacity':'1','margin-top':'0'});
+		setTimeout(function(){
+		$('#who-am-i #contact img').eq(0).css('opacity','1')
+		},3000);
+		setTimeout(function(){
+		$('#who-am-i #contact img').eq(1).css('opacity','1')
+		},3500);
+		setTimeout(function(){
+		$('#who-am-i #contact img').eq(2).css('opacity','1')
+		},4000);
+		setTimeout(function(){
+		$('#who-am-i #contact img').eq(3).css('opacity','1')
+		},4500);
         break;
+    case 1:
+        
     case 2:
         $('#experience-one').fadeIn(1000,function(){$('#experience-two').fadeIn(1000,function(){$('#experience-three').fadeIn(1000)})});
         break;
@@ -87,8 +99,12 @@ switch(i) {
 
 function animationOut(i){
 switch(i) {
+	 case 0:
+        $('#who-am-i #avatar img').css({'opacity':'0','margin-top':'-5rem'});
+		$('#who-am-i #contact img').css('opacity','0');
+        break;
     case 1:
-        $('.page2 h2').fadeOut();
+        
         break;
     case 2:
         $('#experience-one,#experience-two,#experience-three').fadeOut()
@@ -110,8 +126,6 @@ switch(i) {
         ;
 }
 }
-	
-	
 	
 	$(document).ready(
 
