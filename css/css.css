@@ -420,13 +420,6 @@ background:rgba(255,255,255,.5);
 		font-size:31.25%;
 	}
 
-	.subtitle{
-	width:300px;
-	}
-	
-	.line {
-   height:2px;
-   }
 	
 #who-am-i{
 		font-size: 2rem;
@@ -445,16 +438,7 @@ background:rgba(255,255,255,.5);
 	body,html {
 	font-size:25%;
 	}
-	
-	.subtitle{
-	width:300px;
-	}
-	
-	.line {
-   width:100px;
-   height:1px;
-   }
-   
+
    	.bullets li {
 	margin: 0 6px;
 	}
@@ -466,19 +450,6 @@ background:rgba(255,255,255,.5);
 	body,html {
 		font-size:12.25%;
 	}
-	.line {
-   width:50px;
-   height:1px;
-   }
-   
-   .subtitle{
-	width:200px;}
-	
-	.pace .pace-progress {
-  box-shadow: 0 0 5px #e51115;
-  height: 5px;
-
-}
 
   #i-am-frank {
 	position: absolute;
