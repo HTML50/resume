@@ -136,7 +136,6 @@
 						</a>
 					</div>
 				</div>
-				<div class='.project-item'><span>more on github</span></div>
 			</div>
 		</div>
 		<div class='boxMask'>
@@ -149,14 +148,10 @@
 
 <script>
 setTimeout(function(){
-$('#my-skill .javascript-bar').css('width', '40rem');
-			$('#my-skill .html-bar').css('width', '40rem');
-			$('#my-skill .css-bar').css('width', '40rem');
-			$('#my-skill .font-bar').css('width', '25rem');
-			$('#my-skill .color-bar').css('width', '30rem');
-			$('#my-skill .image-bar').css('width', '32rem');
-			$('#my-skill .animation-bar').css('width', '30rem');
-			$('#my-skill .layout-bar').css('width', '40rem');
+$('#my-project .project-item').eq(0).fadeIn(2000,function(){
+	$('#my-project .project-item').eq(1).fadeIn(2000)
+})
+
 },1)
 	
 </script>

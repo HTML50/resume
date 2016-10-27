@@ -259,7 +259,7 @@ margin:30px;
 
 
 .item .mask,.item-img {
-width:300px;
+width:350px;
 height:200px;
 }
 
@@ -342,6 +342,7 @@ flex-direction: column;
 .project-item{
 width:100%;
 text-align:center;
+display:none;
 }
 
 
