@@ -207,7 +207,7 @@ transition:all 1.5s;
 #scroll-arrow	{
 	display:none;
 	position: absolute;
-	left: calc(50% - 17px); bottom: 10%;
+	left: calc(50% - 17px); bottom: 5%;
 }
 
 #scroll-arrow:hover{
