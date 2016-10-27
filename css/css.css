@@ -234,6 +234,10 @@ transition:all 1.5s;
 	background: #dc6c5f;
 }
 
+#my-project .topic{
+	font-size:15rem;
+	right:calc(-50% + 1rem);
+}
 
 
 .wrap{
