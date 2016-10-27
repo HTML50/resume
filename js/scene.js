@@ -7,8 +7,8 @@ var firstLoad=false;
 
 //when page is full loaded
 Pace.on('done', function() {
-
 if(!firstLoad){
+	
 	$('#loader').delay(1000).fadeOut('slow',function(){
 			//show first page from 'display:none'	
 	$('#cubeTransition>div:eq(0)').fadeIn('slow');
@@ -53,7 +53,7 @@ setTimeout(function(){
 		setTimeout(function(){
 		$('#who-am-i #contact img').eq(3).css('opacity','1')
 		},5500);
-},1)
+},5000)
 				
 		});
 
