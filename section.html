@@ -148,10 +148,14 @@
 
 <script>
 setTimeout(function(){
-$('#my-project .project-item').eq(0).fadeIn(2000,function(){
-	$('#my-project .project-item').eq(1).fadeIn(2000,function(){
-		$('#my-project .project-item').eq(2).fadeIn(2000,function(){
-			$('#my-project .project-item').eq(3).fadeIn();
+$('#my-project .project-item').eq(0).fadeIn(1000,function(){
+	$('#my-project .project-item').eq(1).fadeIn(1000,function(){
+		$('#my-project .project-item').eq(2).fadeIn(1000,function(){
+			$('#my-project .project-item').eq(3).fadeIn(1000,function(){
+				$('#my-project .project-item').eq(4).fadeIn(1000,function(){
+					$('#my-project .project-item').eq(5).fadeIn(1000);
+				})
+			})
 		})
 	})
 })

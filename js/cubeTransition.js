@@ -65,7 +65,17 @@
 			setTimeout(function(){$('#who-am-i #avatar img').css('transform','rotateX(0deg)')},3000)
 			break;
 		case 1:
-
+$('#my-project .project-item').eq(0).fadeIn(1000,function(){
+	$('#my-project .project-item').eq(1).fadeIn(1000,function(){
+		$('#my-project .project-item').eq(2).fadeIn(1000,function(){
+			$('#my-project .project-item').eq(3).fadeIn(1000,function(){
+				$('#my-project .project-item').eq(4).fadeIn(1000,function(){
+					$('#my-project .project-item').eq(5).fadeIn(1000);
+				})
+			})
+		})
+	})
+})
 		case 2:
 			$('#experience-one').fadeIn(1000, function() {
 				$('#experience-two').fadeIn(1000, function() {
@@ -101,7 +111,7 @@
 			$('#who-am-i #avatar img').css('transform','rotateX(0deg)');
 			break;
 		case 1:
-
+			$('#my-project .project-item').fadeOut();
 			break;
 		case 2:
 			$('#experience-one,#experience-two,#experience-three').fadeOut(100);
