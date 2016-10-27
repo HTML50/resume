@@ -53,7 +53,7 @@ setTimeout(function(){
 		setTimeout(function(){
 		$('#who-am-i #contact img').eq(3).css('opacity','1')
 		},5500);
-},5000)
+},9780)
 				
 		});
 
