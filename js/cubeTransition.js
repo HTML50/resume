@@ -61,29 +61,17 @@
 	function animationIn(i) {
 		switch (i) {
 		case 0:
-			$('#who-am-i #avatar img').css({
-				'opacity': '1',
-				'margin-top': '0'
-			});
-			setTimeout(function() {
-				$('#who-am-i #contact img').eq(0).css('opacity', '1')
-			}, 3000);
-			setTimeout(function() {
-				$('#who-am-i #contact img').eq(1).css('opacity', '1')
-			}, 3500);
-			setTimeout(function() {
-				$('#who-am-i #contact img').eq(2).css('opacity', '1')
-			}, 4000);
-			setTimeout(function() {
-				$('#who-am-i #contact img').eq(3).css('opacity', '1')
-			}, 4500);
+			$('#who-am-i #avatar img').css('transform','rotateX(360deg)');
+			setTimeout(function(){$('#who-am-i #avatar img').css('transform','rotateX(0deg)')},3000)
 			break;
 		case 1:
 
 		case 2:
 			$('#experience-one').fadeIn(1000, function() {
 				$('#experience-two').fadeIn(1000, function() {
-					$('#experience-three').fadeIn(1000)
+					$('#experience-three').fadeIn(1000,function() {
+						$('#my-experience .line').css('width','100%');
+					})
 				})
 			});
 			break;
@@ -98,7 +86,9 @@
 			$('#my-skill .layout-bar').css('width', '40rem');
 			break;
 		case 4:
-
+			$('#my-info .hello').fadeIn(1000,function(){
+				$('#my-info .more').fadeIn(2000);
+			})
 			break;
 		default:
 			;
@@ -108,17 +98,14 @@
 	function animationOut(i) {
 		switch (i) {
 		case 0:
-			$('#who-am-i #avatar img').css({
-				'opacity': '0',
-				'margin-top': '-5rem'
-			});
-			$('#who-am-i #contact img').css('opacity', '0');
+			$('#who-am-i #avatar img').css('transform','rotateX(0deg)');
 			break;
 		case 1:
 
 			break;
 		case 2:
-			$('#experience-one,#experience-two,#experience-three').fadeOut()
+			$('#experience-one,#experience-two,#experience-three').fadeOut(100);
+			$('#my-experience .line').css('width','0');
 			break;
 		case 3:
 			$('#my-skill .javascript-bar').css('width', '20rem')
@@ -131,7 +118,9 @@
 			$('#my-skill .layout-bar').css('width', '20rem')
 			break;
 		case 4:
-
+			$('#my-info .more').fadeOut(200,function(){
+				$('#my-info .hello').fadeOut(100);
+			})
 			break;
 		default:
 			;

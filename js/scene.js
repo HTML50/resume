@@ -21,7 +21,7 @@ $('#who-am-i').css('background','#000')
 //typer
 setTimeout(function(){
 typerFrank=new typer('i-am-frank');
-typerFrank.type(1000).type('Hello!').type(1000).del().type(500).type('I am frank').type(500).end();
+typerFrank.type(1000).type('Hello!').type(1000).del().type(500).type('I am 2Byte').type(500).end();
 },3000)
 setTimeout(function(){
 typer = new typer('what-i-do');
