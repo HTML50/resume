@@ -77,6 +77,7 @@ $('#my-project .project-item').eq(0).fadeIn(1000,function(){
 	})
 })
 		case 2:
+		$('#experience-one,#experience-two,#experience-three').hide(,function(){
 			$('#experience-one').fadeIn(1000, function() {
 				$('#experience-two').fadeIn(1000, function() {
 					$('#experience-three').fadeIn(1000,function() {
@@ -84,6 +85,7 @@ $('#my-project .project-item').eq(0).fadeIn(1000,function(){
 					})
 				})
 			});
+		});
 			break;
 		case 3:
 			$('#my-skill .javascript-bar').css('width', '40rem');
@@ -171,6 +173,9 @@ $('#my-project .project-item').eq(0).fadeIn(1000,function(){
 
 		$('#bullets>li').on('click', function() {
 			openIndex($(this).index() + 1);
+		});
+		$('#scroll-arrow').on('click', function() {
+			openIndex(2);
 		});
 
 	});

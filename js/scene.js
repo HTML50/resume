@@ -21,12 +21,12 @@ $('#who-am-i').css('background','#000')
 //typer
 setTimeout(function(){
 typerFrank=new typer('i-am-frank');
-typerFrank.type(1000).type('Hello!').type(1000).del().type(500).type('I am 2Byte').type(500).end();
+typerFrank.type(1000).type('Hello!').type(1000).del().type(500).type('I am 2Byte').type(1500).end();
 },3000)
 setTimeout(function(){
 typer = new typer('what-i-do');
 typer.type(3000).type('i enjoy creating interesting things').type(2000).del(18).type(1000).type('beautiful things').type(2000).del(16).type(1000).type('simple things').type(2000).del().type(1000).type('be happy.').type(2000).del().repeat();
-},8780)
+},9780)
 
 
 //load cubeTransition.js & scroll tip after few seconds
@@ -53,7 +53,7 @@ setTimeout(function(){
 		setTimeout(function(){
 		$('#who-am-i #contact img').eq(3).css('opacity','1')
 		},5500);
-},11780)
+},12780)
 				
 		});
 

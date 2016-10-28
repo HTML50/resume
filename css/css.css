@@ -154,7 +154,7 @@ transition:all 1.5s;
 	/*这里加这句，就会和$.show()冲突，文字会强制显示。*/
 }
 
-#who-am-i  .type{
+#who-am-i .type{
 	text-align:center;
 	width:50rem;
 	height:40rem;
@@ -191,8 +191,6 @@ transition:all 1.5s;
 	line-height:3rem;
 	margin: auto;
 	position: relative;
-
-	/*绝对居中布局，放在别处不管用？？？？*/
 }
 
 #who-am-i #what-i-do {
@@ -201,10 +199,9 @@ transition:all 1.5s;
 	line-height:3rem;
 	margin: auto;
 	position: relative;
-	/*绝对居中布局，放在别处不管用？？？？*/
 }
 
-#scroll-arrow	{
+#scroll-arrow{
 	display:none;
 	position: absolute;
 	left: calc(50% - 17px); bottom: 5%;
@@ -384,6 +381,10 @@ background:rgba(0,0,0,.5);
 	background: #189e5b;
 }
 
+#my-experience .topic{
+	 font-size: 11.7rem;
+    right: calc( -50% + 3rem);
+}
 .experience-box{
   width:80rem;
   height: 95%;
@@ -408,12 +409,11 @@ background:rgba(0,0,0,.5);
 #experience-one,#experience-two,#experience-three{
 	display:none;
 	padding:1rem;
-
 }
 
 #experience-one:hover,#experience-two:hover,#experience-three:hover{
 	background:rgba(255,255,255,.3);
-	transition:all .5s;
+	transition:all 0.5s;
 }
 
 #my-experience .line{
