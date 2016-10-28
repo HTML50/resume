@@ -40,7 +40,6 @@ $("#scroll-arrow").fadeIn(3000);
 $("#cubeTransition").append(bullet);
 $("#bullets").fadeIn(3000);
 $("#scroll-arrow").fadeIn(3000);
->>>>>>> refs/remotes/origin/gh-pages
 $('#who-am-i').css('background','#81ced0')
 jQuery.getScript("js/cubeTransition.js")
 setTimeout(function(){
