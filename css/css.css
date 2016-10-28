@@ -15,7 +15,8 @@
 html,body {
 	width: 100%;
 	height: 100%;
-	font: 62.5% "Merriweather",Georgia;
+	font: 10px "Merriweather",Georgia;
+	/*62.5% 如果用户修改过浏览器默认字体大小，是不是就不起作用了呢*/
 	color: #fff;
 	overflow: hidden;
 }
@@ -57,8 +58,8 @@ color:#fff;
 
 #loader .word{
 	font-size: 2rem;
-	height:3rem;
-	width:70rem;
+	height:36px;
+	width:840px;
 	text-shadow:1px 1px 1px #000;
 	text-align:center;
 }
@@ -89,8 +90,8 @@ color:#fff;
 
 #bullets li {
 	display: block;
-	width: 1.5rem;
-	height: 1.5rem;
+	width: 18px;
+	height: 18px;
 	margin: 10px 0 0 0;
 	background: rgba( 255, 255, 255, 0.5 );
 	border-radius: 100%;
@@ -125,7 +126,7 @@ opacity: 1;
 width:80%;
 height:2px;
 background:#fff;
-margin:2rem 0 2rem 0;
+margin:24px 0 24px 0;
 transition:all 1.5s;
 }
 
@@ -137,7 +138,7 @@ transition:all 1.5s;
 	transform:rotateZ(90deg);
 	transform-origin:0 0;
 	text-transform:uppercase;
-	right:calc(-50% - 2rem);
+	right:calc(-50% - 24px);
 	color:rgba(0,0,0,0.1);
 	text-shadow: none;
 }
@@ -156,17 +157,17 @@ transition:all 1.5s;
 
 #who-am-i .type{
 	text-align:center;
-	width:50rem;
-	height:40rem;
+	width:600px;
+	height:480px;
 }
 
 
 #who-am-i #avatar img{
-	width:20rem;
+	width:240px;
 	opacity:0;
-	margin-top:-5rem;
+	margin-top:-60px;
 	background:#fff;
-	border-radius: 10rem;
+	border-radius: 120px;
 	box-shadow:3px 3px 20px 5px rgba(0,0,0,.3);
 	transition:all 3s;
 }
@@ -176,7 +177,7 @@ transition:all 1.5s;
 }
 
 #who-am-i #contact img{
-	width:4rem;
+	width:48px;
 	opacity:0;
 	transition:all 2s;
 }
@@ -185,21 +186,7 @@ transition:all 1.5s;
 	transform:rotateZ(360deg)
 }
 
-#who-am-i #i-am-frank {
-	width:195px;
-	height: 3rem;
-	line-height:3rem;
-	margin: auto;
-	position: relative;
-}
 
-#who-am-i #what-i-do {
-	width:590px;
-	height: 3rem;
-	line-height:3rem;
-	margin: auto;
-	position: relative;
-}
 
 #scroll-arrow{
 	display:none;
@@ -233,7 +220,7 @@ transition:all 1.5s;
 
 #my-project .topic{
 	font-size:15rem;
-	right:calc(-50% + 1rem);
+	right:calc(-50% + 12px);
 }
 
 
@@ -259,7 +246,7 @@ margin:30px;
 }
 
 
-.item .mask,.item-img {
+.item .mask,.item-img{
 width:350px;
 height:200px;
 }
@@ -386,11 +373,11 @@ background:rgba(0,0,0,.5);
 
 #my-experience .topic{
 	 font-size: 11.7rem;
-    right: calc( -50% + .5rem);
+    right: calc( -50% + 6px);
 }
 .experience-box{
-  width:80rem;
-  height: 95%;
+  width:960px;
+  height:620px;
   line-height:2;
 }
 
@@ -411,7 +398,7 @@ background:rgba(0,0,0,.5);
 
 #experience-one,#experience-two,#experience-three{
 	display:none;
-	padding:1rem;
+	padding:12px;
 }
 
 #experience-one:hover,#experience-two:hover,#experience-three:hover{
@@ -429,12 +416,12 @@ background:rgba(0,0,0,.5);
 	background: #64b9d2;
 }
 #my-skill .topic{
-	right:calc(- 50% + 3rem);
+	right:calc(- 50% + 36px);
 	font-size:10rem;
 }
 .skill-box{
-	height:90%;
-	width:60rem;
+	height:580px;
+	width:750px;
 }
 
 .skill-box .skill-item:hover .proficiency{
@@ -455,7 +442,7 @@ background:rgba(0,0,0,.5);
 	transition:all 1s;
 	content:'!'; 
 	position:absolute;
-	left:-3rem;
+	left:-36px;
 	font-size:6rem;
 	font-style:none;
 	font-weight:300;
@@ -464,15 +451,15 @@ background:rgba(0,0,0,.5);
 
 @keyframes on-going{
 	0%{
-		width:40rem;
+		width:480px;
 	}
 	
 	50%{
-		width:41rem;
+		width:492px;
 	}
 	
 	100%{
-		width:40rem;
+		width:480px;
 	}
 	
 }
@@ -484,8 +471,8 @@ background:rgba(0,0,0,.5);
 }
 .skill-box .proficiency{
 	background:#fff;
-	width:20rem;
-	height:1rem;
+	width:240px;
+	height:12px;
 	display:inline-block;
 	margin-left:20px;
 	transition:width 1s;
@@ -497,7 +484,7 @@ background:rgba(0,0,0,.5);
 #my-info {
 	background: #89b32f;
 	font-size:2.7rem;
-	line-height:4rem;
+	line-height:48px;
 	font-weight: 300;
 	font-style: italic;
 }
@@ -507,7 +494,7 @@ background:rgba(0,0,0,.5);
 	transition:all 500ms;
 	display:inline-block;
     padding: 3px 10px 1px 8px;
-    line-height: 2.6rem;
+    line-height: 31px;
 	position:relative;
 }
 
@@ -531,8 +518,8 @@ background:rgba(0,0,0,.5);
 }
 
 .info-box{
-	height:45rem;
-	width:85rem;
+	height:580px;
+	width:1020px;
 }
 
 .info-box .hello,.more{
@@ -564,15 +551,15 @@ background:rgba(0,0,0,.5);
 }
 
 .info-box .btn{
-	margin-top:2rem;
+	margin-top:24px;
 	font-family:'Cutive';
-	height:4.5rem;
-	width:10rem;
+	height:54px;
+	width:120px;
     background-color: #3F8ABF;
 	color:#fff;
 	font-size: 1.8rem;
 	font-weight: 700;
-	border-radius:1rem;
+	border-radius:12px;
 	transition:all 1s;
 	cursor:pointer;
 	}
@@ -586,26 +573,50 @@ background:rgba(0,0,0,.5);
 }
 
 
-@media screen and (max-width: 700px) and (min-width: 500px){
+@media screen and (max-width: 1100px) and (min-width: 800px){
 	body,html {
-		font-size:31.25%;
+		font-size:8px;
 	}
+	#who-am-i #avatar img {
+		    width: 180px;
+	}
+	#who-am-i #contact img {
+    width: 36px;
+	}
+	
+	.project-item .item {
+    margin: 10px;
+}
 
-	
-#who-am-i{
-		font-size: 2rem;
-	}
-	
-	#i-am-frank {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate3d(-50%, -50%, 0);
-	width: 80%;
+.item .mask, .item-img,.item-img img {
+    width: 200px;
+    height: 150px;
+}
+.experience-box {
+  width: 560px;
+    height: 480px;
+    line-height: 1.5;
+}
+.skill-box {
+    height: 420px;
+    width: 650px;
+}
+.skill-box .lang {
+    font-size: 2.5rem;
+}
+
+#my-info {
+    background: #89b32f;
+    font-size: 2.4rem;
+    line-height: 35px;
+}
+.info-box {
+    height: 440px;
+    width: 700px;
 }
 }
 
-@media screen and (max-width: 500px) and (min-width: 380px){
+@media screen and (max-width: 800px) and (min-width: 500px){
 	body,html {
 	font-size:25%;
 	}
