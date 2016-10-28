@@ -19,7 +19,7 @@ html,body {
 	/*62.5% 如果用户修改过浏览器默认字体大小，是不是就不起作用了呢*/
 	color: #fff;
 	overflow: hidden;
-	animation: bg-color 50s linear infinite;
+	animation: bg-color 80s linear infinite;
 }
 
 a{
