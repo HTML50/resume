@@ -53,6 +53,9 @@ setTimeout(function(){
 		setTimeout(function(){
 		$('#who-am-i #contact img').eq(3).css('opacity','1')
 		},5500);
+		
+		$('#who-am-i,#my-project,#my-experience,#my-skill,#my-info').css('background','rgba(0,0,0,0)')
+		
 },12780)
 				
 		});
