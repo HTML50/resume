@@ -33,13 +33,10 @@ typer.type(3000).type('I enjoy creating interesting things').type(2000).del(18).
 setTimeout(function(){
 	
 var bullet = $('<ul id="bullets" style="display:none"></ul>');
-<<<<<<< HEAD
 
 $("#cubeTransition").append(bullet);
 $("#bullets").fadeIn(3000);
 $("#scroll-arrow").fadeIn(3000);
-
-=======
 $("#cubeTransition").append(bullet);
 $("#bullets").fadeIn(3000);
 $("#scroll-arrow").fadeIn(3000);
