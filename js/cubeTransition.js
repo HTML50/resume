@@ -7,7 +7,7 @@
 
 
 
-	var bullet = $("<li class='active'><span>About</span></li><li><span>project</span></li><li><span>Experience</span></li><li><span>skill</span></li><li><span>info</span></li>");
+	var bullet = $("<li class='active'><span>About</span></li><li><span>Project</span></li><li><span>Experience</span></li><li><span>Skill</span></li><li><span>Infomation</span></li>");
 	$("#bullets").append(bullet);
 
 
@@ -61,31 +61,44 @@
 	function animationIn(i) {
 		switch (i) {
 		case 0:
-			$('#who-am-i #avatar img').css('transform','rotateX(360deg)');
-			setTimeout(function(){$('#who-am-i #avatar img').css('transform','rotateX(0deg)')},3000)
+			$('#who-am-i #avatar img').css('transform', 'rotateX(360deg)');
+			setTimeout(function() {
+				$('#who-am-i #avatar img').css('transform', 'rotateX(0deg)')
+			}, 3000)
 			break;
 		case 1:
-$('#my-project .project-item').eq(0).fadeIn(1000,function(){
-	$('#my-project .project-item').eq(1).fadeIn(1000,function(){
-		$('#my-project .project-item').eq(2).fadeIn(1000,function(){
-			$('#my-project .project-item').eq(3).fadeIn(1000,function(){
-				$('#my-project .project-item').eq(4).fadeIn(1000,function(){
-					$('#my-project .project-item').eq(5).fadeIn(1000);
+			$('#my-project .project-item').eq(0).animate({
+				'opacity': '1'
+			}, function() {
+				$('#my-project .project-item').eq(1).animate({
+					'opacity': '1'
+				}, function() {
+					$('#my-project .project-item').eq(2).animate({
+						'opacity': '1'
+					}, function() {
+						$('#my-project .project-item').eq(3).animate({
+							'opacity': '1'
+						}, function() {
+							$('#my-project .project-item').eq(4).animate({
+								'opacity': '1'
+							}, function() {
+								$('#my-project .project-item').eq(5).animate({
+									'opacity': '1'
+								});
+							})
+						})
+					})
 				})
 			})
-		})
-	})
-})
+			break;
 		case 2:
-		$('#experience-one,#experience-two,#experience-three').hide(,function(){
 			$('#experience-one').fadeIn(1000, function() {
 				$('#experience-two').fadeIn(1000, function() {
-					$('#experience-three').fadeIn(1000,function() {
-						$('#my-experience .line').css('width','100%');
+					$('#experience-three').fadeIn(1000, function() {
+						$('#my-experience .line').css('width', '100%');
 					})
 				})
 			});
-		});
 			break;
 		case 3:
 			$('#my-skill .javascript-bar').css('width', '40rem');
@@ -98,7 +111,7 @@ $('#my-project .project-item').eq(0).fadeIn(1000,function(){
 			$('#my-skill .layout-bar').css('width', '40rem');
 			break;
 		case 4:
-			$('#my-info .hello').fadeIn(1000,function(){
+			$('#my-info .hello').fadeIn(1000, function() {
 				$('#my-info .more').fadeIn(2000);
 			})
 			break;
@@ -110,14 +123,14 @@ $('#my-project .project-item').eq(0).fadeIn(1000,function(){
 	function animationOut(i) {
 		switch (i) {
 		case 0:
-			$('#who-am-i #avatar img').css('transform','rotateX(0deg)');
+			$('#who-am-i #avatar img').css('transform', 'rotateX(0deg)');
 			break;
 		case 1:
-			$('#my-project .project-item').fadeOut();
+			$('#my-project .project-item').css('opacity', 0);
 			break;
 		case 2:
-			$('#experience-one,#experience-two,#experience-three').fadeOut(100);
-			$('#my-experience .line').css('width','0');
+			$('#experience-one,#experience-two,#experience-three').fadeOut(300);
+			$('#my-experience .line').css('width', '0');
 			break;
 		case 3:
 			$('#my-skill .javascript-bar').css('width', '20rem')
@@ -130,7 +143,7 @@ $('#my-project .project-item').eq(0).fadeIn(1000,function(){
 			$('#my-skill .layout-bar').css('width', '20rem')
 			break;
 		case 4:
-			$('#my-info .more').fadeOut(200,function(){
+			$('#my-info .more').fadeOut(200, function() {
 				$('#my-info .hello').fadeOut(100);
 			})
 			break;

@@ -25,7 +25,7 @@ typerFrank.type(1000).type('Hello!').type(1000).del().type(500).type('I am 2Byte
 },3000)
 setTimeout(function(){
 typer = new typer('what-i-do');
-typer.type(3000).type('i enjoy creating interesting things').type(2000).del(18).type(1000).type('beautiful things').type(2000).del(16).type(1000).type('simple things').type(2000).del().type(1000).type('be happy.').type(2000).del().repeat();
+typer.type(3000).type('I enjoy creating interesting things').type(2000).del(18).type(1000).type('beautiful things').type(2000).del(16).type(1000).type('simple things').type(2000).del().type(1000).type('be happy.').type(2000).del().repeat();
 },9780)
 
 
