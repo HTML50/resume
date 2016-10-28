@@ -246,7 +246,7 @@ margin:30px;
 }
 
 
-.item .mask,.item-img {
+.item .mask,.item-img{
 width:350px;
 height:200px;
 }
@@ -573,26 +573,50 @@ background:rgba(0,0,0,.5);
 }
 
 
-@media screen and (max-width: 700px) and (min-width: 500px){
+@media screen and (max-width: 1100px) and (min-width: 800px){
 	body,html {
-		font-size:31.25%;
+		font-size:8px;
 	}
+	#who-am-i #avatar img {
+		    width: 180px;
+	}
+	#who-am-i #contact img {
+    width: 36px;
+	}
+	
+	.project-item .item {
+    margin: 10px;
+}
 
-	
-#who-am-i{
-		font-size: 2rem;
-	}
-	
-	#i-am-frank {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate3d(-50%, -50%, 0);
-	width: 80%;
+.item .mask, .item-img,.item-img img {
+    width: 200px;
+    height: 150px;
+}
+.experience-box {
+  width: 560px;
+    height: 480px;
+    line-height: 1.5;
+}
+.skill-box {
+    height: 420px;
+    width: 650px;
+}
+.skill-box .lang {
+    font-size: 2.5rem;
+}
+
+#my-info {
+    background: #89b32f;
+    font-size: 2.4rem;
+    line-height: 35px;
+}
+.info-box {
+    height: 440px;
+    width: 700px;
 }
 }
 
-@media screen and (max-width: 500px) and (min-width: 380px){
+@media screen and (max-width: 800px) and (min-width: 500px){
 	body,html {
 	font-size:25%;
 	}
