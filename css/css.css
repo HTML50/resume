@@ -3,6 +3,11 @@
     src: url("../css/Cutive.woff2") format('woff2');
 }
 @font-face {
+    font-family: "Century Gothic";
+    src: url("../css/Century-Gothic.woff2") format('woff2');
+}
+
+@font-face {
     font-family: "Merriweather";
     src: url("../css/Merriweather.woff2") format('woff2');
 }
