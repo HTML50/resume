@@ -1,0 +1,649 @@
+@font-face {
+    font-family: "Cutive";
+    src: url("../css/Cutive.woff2") format('woff2');
+}
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../css/Century-Gothic.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("../css/Merriweather.woff2") format('woff2');
+}
+* {
+	margin: 0;
+	padding: 0;
+	border:none;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	font: 10px "Merriweather",Georgia;
+	/*62.5% 如果用户修改过浏览器默认字体大小，是不是就不起作用了呢*/
+	color: #fff;
+	overflow: hidden;
+	animation: bg-color 80s linear infinite;
+}
+
+a{
+text-decoration:none;
+color:#fff;
+}
+
+/******************************   			top layer					******************************/
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #fff;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 5px;
+}
+
+
+#loader {
+	animation: bg-color 20s infinite;
+	height:100%;
+	width:100%;
+}
+
+#loader .word{
+	font-size: 2rem;
+	height:36px;
+	width:840px;
+	text-shadow:1px 1px 1px #000;
+	text-align:center;
+}
+
+@keyframes bg-color {
+  0% { background-color: #e74c3c;}
+  10% { background-color: #81ced0;}	/* tiffany blue*/
+  20% { background-color: #f1c40f;}
+  30% { background-color: #2c3e50;}
+  40% { background-color: #1abc9c; }
+  50% { background-color: #2980b9; }
+  60% { background-color: #3498db; }
+  70% { background-color: #ffcb65; }
+  80% { background-color: #89b32f; }
+  90% { background-color: #64b9d2; }
+  100% { background-color: #e74c3c; }
+}
+
+.ab-center{
+	margin: auto;  
+  position: absolute;  
+  top: 0; left: 0; bottom: 0; right: 0;  
+}
+
+#bullets {
+	position: absolute;
+	top:40%;
+	left: 20px;
+	text-align: center;
+	z-index:100;
+	font-size:15px;
+}
+
+#bullets li {
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: 10px 0 0 0;
+	background: rgba( 255, 255, 255, 0.5 );
+	border-radius: 100%;
+	transition:all 1s;	
+	cursor: pointer;    
+}
+
+#bullets li:hover {
+	background: rgba( 255, 255, 255, 0.8 );
+}
+
+#bullets li.active {
+	cursor: default;
+	background: #fff;
+	border-radius: 10%;
+}
+
+
+#bullets li span{
+margin-left:25px;
+visibility: hidden;
+opacity: 0;
+transition:all 1s;
+}
+
+#bullets li:hover span{
+visibility: visible;
+opacity: 1;
+}
+
+.line{
+width:80%;
+height:2px;
+background:#fff;
+margin:24px 0 24px 0;
+transition:all 1.5s;
+}
+
+.topic{
+	position:absolute;
+	font-family:'Century Gothic';
+	font-size:12rem;
+	font-style: normal;
+	transform:rotateZ(90deg);
+	transform-origin:0 0;
+	text-transform:uppercase;
+	right:calc(-50% - 24px);
+	color:rgba(0,0,0,0.1);
+	text-shadow: none;
+}
+
+
+/******************************   			i-am-frank					******************************/
+#who-am-i {
+	background: #fff;
+	transition: background-color 1000ms ease-out,color 150ms ease-out;
+	color: #000;
+	font-size: 3rem;
+	font-family:'Cutive','Merriweather','Courier New';
+	/*display:block !important;*/
+	/*这里加这句，就会和$.show()冲突，文字会强制显示。*/
+}
+
+#who-am-i .type{
+	text-align:center;
+	width:600px;
+	height:480px;
+}
+
+
+#who-am-i #avatar img{
+	width:240px;
+	opacity:0;
+	margin-top:-60px;
+	background:#fff;
+	border-radius: 120px;
+	box-shadow:3px 3px 20px 5px rgba(0,0,0,.3);
+	transition:all 3s;
+}
+
+#who-am-i #avatar img:hover{
+	transform:rotateX(360deg) !important;
+}
+
+#who-am-i #contact img{
+	width:48px;
+	opacity:0;
+	transition:all 2s;
+}
+
+#who-am-i #contact img:hover{
+	transform:rotateZ(360deg)
+}
+
+
+
+#scroll-arrow{
+	display:none;
+	position: absolute;
+	left: calc(50% - 17px); bottom: 5%;
+}
+
+#scroll-arrow:hover{
+	animation:drop-down 1s infinite;
+}
+@keyframes drop-down{
+	0%{
+		bottom: 5%
+	}
+	50%{
+		bottom: 3%
+	}
+	100%{
+		bottom: 5%
+	}
+}
+
+
+
+/******************************   			project					******************************/
+
+
+#my-project {
+	background: #dc6c5f;
+}
+
+#my-project .topic{
+	font-size:15rem;
+	right:calc(-50% + 12px);
+}
+
+
+.wrap{
+display:flex;
+align-items: center;
+justify-content:center;
+height:100%;
+}
+
+.container{
+display:flex;
+}
+
+.container .flex-row{
+display:flex;
+}
+
+
+.project-item .item{
+position:relative;
+margin:30px;
+}
+
+
+.item .mask,.item-img{
+width:350px;
+height:200px;
+}
+
+
+.mask,.item-headline,.item-line,.item-details{
+position:absolute;
+opacity:0;
+transition:all 500ms;
+transform: translate3d(-50%, -50%, 0);
+}
+
+.mask{
+top:0;
+left:0;
+transition:all 500ms;
+transform: translate3d(0, 0, 0);
+}
+
+.item-headline{
+top:0;
+left:50%;
+font-size:3rem;
+width:100%;
+}
+
+.item-details{
+bottom:0;
+left:50%;
+font-size:2rem;
+width:90%;
+height:20px;
+}
+
+.item-line{
+left:50%;
+top:50%;
+width:80%;
+height:1px;
+background:#fff;
+}
+
+
+.item:hover .item-img{
+box-shadow: 1px 10px 15px #000;
+}
+
+
+.item:hover .mask{
+background:#000;
+opacity:.8;
+}
+
+.item:hover .item-headline{
+top:50px;
+opacity:1;
+}
+
+.item:hover .item-line{
+top:100px;
+opacity:1;
+}
+
+
+.item:hover .item-details{
+bottom:50px;
+opacity:1;
+}
+
+
+.column{
+flex-direction: column;
+}
+
+.project-item{
+width:100%;
+text-align:center;
+transition:opacity 0.3s;
+opacity:0;
+}
+.project-item a{
+cursor:zoom-in;
+}
+
+.item-img{
+box-shadow: 1px 2px 10px #000;
+transition:all 300ms;
+background:#000;
+}
+
+.item-img img{
+	width:300px;
+	height:200px;
+}
+
+
+#boxLayer{
+display:none;
+position:fixed;
+top:50%;
+left:50%;
+width:80%;
+height:90%;
+transform:translate3d(-50%,-50%,0);
+box-shadow:5px 5px 10px #000;
+}
+
+
+.boxMask{
+display:none;
+position:fixed;
+top:0;
+left:0;
+height:100%;
+width:100%;
+background:rgba(0,0,0,.5);
+}
+
+/******************************   			experience					******************************/
+
+#my-experience {
+	background: #189e5b;
+}
+
+#my-experience .topic{
+	 font-size: 11.7rem;
+    right: calc( -50% + 6px);
+}
+.experience-box{
+  width:960px;
+  height:620px;
+  line-height:2;
+}
+
+.experience-box h1{
+	font-size:3rem;
+	text-shadow: 1px 1px 2px black;
+
+}
+
+.experience-box h2{
+	font-size:1rem;
+
+}
+
+.experience-box h3{
+	font-size:2rem;
+}
+
+#experience-one,#experience-two,#experience-three{
+	display:none;
+	padding:12px;
+}
+
+#experience-one:hover,#experience-two:hover,#experience-three:hover{
+	background:rgba(255,255,255,.3);
+	transition:all 0.5s;
+}
+
+#my-experience .line{
+	width:0;
+}
+
+/******************************   			skill					******************************/
+
+#my-skill {
+	background: #64b9d2;
+}
+#my-skill .topic{
+	right:calc(- 50% + 36px);
+	font-size:10rem;
+}
+.skill-box{
+	height:580px;
+	width:750px;
+}
+
+.skill-box .skill-item:hover .proficiency{
+	animation: on-going 3s infinite;
+}
+
+.skill-box .tip{
+	opacity:0;
+	transition:all 1s;
+	font-size:1.5rem;
+}
+
+.skill-box .skill-item:hover .tip{
+	opacity:1;
+}
+
+.skill-box .skill-item:hover::before{
+	transition:all 1s;
+	content:'!'; 
+	position:absolute;
+	left:-36px;
+	font-size:6rem;
+	font-style:none;
+	font-weight:300;
+}
+
+
+@keyframes on-going{
+	0%{
+		width:480px;
+	}
+	
+	50%{
+		width:492px;
+	}
+	
+	100%{
+		width:480px;
+	}
+	
+}
+
+.skill-box .lang{
+	font-family:'Cutive','Merriweather','Courier New';
+	font-size:3rem;
+	display:inline-block;
+}
+.skill-box .proficiency{
+	background:#fff;
+	width:240px;
+	height:12px;
+	display:inline-block;
+	margin-left:20px;
+	transition:width 1s;
+}
+
+
+/******************************   			info					******************************/
+
+#my-info {
+	background: #89b32f;
+	font-size:2.7rem;
+	line-height:48px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+
+#my-info a{
+	transition:all 500ms;
+	display:inline-block;
+    padding: 3px 10px 1px 8px;
+    line-height: 31px;
+	position:relative;
+}
+
+#my-info a::before{
+	content:'';
+	transition:all 250ms;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:1px;
+	background:rgba(255,255,255,.9);
+}
+
+#my-info a:hover{
+	color:rgba(0,0,0,.5);	
+}
+#my-info a:hover::before{
+	height:100%;
+	z-index:-1;
+}
+
+.info-box{
+	height:580px;
+	width:1020px;
+}
+
+.info-box .hello,.more{
+	display:none;
+}
+
+.info-box .paragraph{
+  position: relative;
+  cursor:default;
+}
+
+.info-box .paragraph::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.info-box .paragraph:hover::after{
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+.info-box .btn{
+	margin-top:24px;
+	font-family:'Cutive';
+	height:54px;
+	width:120px;
+    background-color: #3F8ABF;
+	color:#fff;
+	font-size: 1.8rem;
+	font-weight: 700;
+	border-radius:12px;
+	transition:all 1s;
+	cursor:pointer;
+	}
+	
+	.info-box .btn:hover{
+	background-color: rgba(63, 114, 191, 0.32);
+	}
+
+@media screen and (max-width: 1100px) and (min-width: 800px){
+	body,html {
+		font-size:8px;
+	}
+	#who-am-i #avatar img {
+		    width: 180px;
+	}
+	#who-am-i #contact img {
+    width: 36px;
+	}
+	
+	.project-item .item {
+    margin: 10px;
+}
+
+.item .mask, .item-img,.item-img img {
+    width: 200px;
+    height: 150px;
+}
+.experience-box {
+  width: 560px;
+    height: 480px;
+    line-height: 1.5;
+}
+.skill-box {
+    height: 420px;
+    width: 650px;
+}
+.skill-box .lang {
+    font-size: 2.5rem;
+}
+
+#my-info {
+    background: #89b32f;
+    font-size: 2.4rem;
+    line-height: 35px;
+}
+.info-box {
+    height: 440px;
+    width: 700px;
+}
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px){
+	body,html {
+	font-size:25%;
+	}
+
+   	.bullets li {
+	margin: 0 6px;
+	}
+   
+   
+   }
+   
+   @media screen and (max-width: 379px){
+	body,html {
+		font-size:12.25%;
+	}
+
+  #i-am-frank {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	width: 150px;
+}
+   }
