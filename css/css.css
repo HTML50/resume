@@ -57,7 +57,9 @@ color:#fff;
 
 
 #loader {
-	animation: bg-color 20s infinite;
+	background: linear-gradient(86deg, #e74c3c, #81ced0, #f1c40f, #89b32f, #dc6c5f, #8c4e06, #3498db, #ffe965, #89b32f, #2980b9, #e74c3c);
+	background-size: 2200% 2200%;
+	animation: loading 40s ease infinite;
 	height:100%;
 	width:100%;
 }
@@ -70,18 +72,47 @@ color:#fff;
 	text-align:center;
 }
 
+@keyframes loading { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+
 @keyframes bg-color {
-  0% { background-color: #e74c3c;}
-  10% { background-color: #81ced0;}	/* tiffany blue*/
-  20% { background-color: #f1c40f;}
-  30% { background-color: #2c3e50;}
-  40% { background-color: #1abc9c; }
-  50% { background-color: #2980b9; }
-  60% { background-color: #3498db; }
-  70% { background-color: #ffcb65; }
-  80% { background-color: #89b32f; }
-  90% { background-color: #64b9d2; }
-  100% { background-color: #e74c3c; }
+0% {
+    background-color: #e74c3c;
+}
+10% {
+    background-color: #81ced0;
+}
+20% {
+    background-color: #f1c40f;
+}
+30% {
+    background-color: #89b32f;
+}
+40% {
+    background-color: #dc6c5f;
+}
+50% {
+    background-color: rgba(140, 78, 6, 0.93);
+}
+60% {
+    background-color: #3498db;
+}
+70% {
+    background-color: #ffe965;
+}
+80% {
+    background-color: #89b32f;
+}
+90% {
+    background-color: #2980b9;
+}
+
+100% {
+    background-color: #e74c3c;
+}
 }
 
 .ab-center{
